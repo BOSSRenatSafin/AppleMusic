@@ -11,6 +11,8 @@
 		15B75A2E27D66FEE00FFAF6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A2D27D66FEE00FFAF6E /* ContentView.swift */; };
 		15B75A3027D66FEF00FFAF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B75A2F27D66FEF00FFAF6E /* Assets.xcassets */; };
 		15B75A3327D66FEF00FFAF6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B75A3227D66FEF00FFAF6E /* Preview Assets.xcassets */; };
+		15B75A3A27D6715A00FFAF6E /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A3927D6715A00FFAF6E /* LibraryView.swift */; };
+		15B75A3C27D67CE800FFAF6E /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A3B27D67CE800FFAF6E /* MiniPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		15B75A2D27D66FEE00FFAF6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15B75A2F27D66FEF00FFAF6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15B75A3227D66FEF00FFAF6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15B75A3927D6715A00FFAF6E /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		15B75A3B27D67CE800FFAF6E /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				15B75A2B27D66FEE00FFAF6E /* AppleMusicApp.swift */,
+				15B75A3927D6715A00FFAF6E /* LibraryView.swift */,
+				15B75A3B27D67CE800FFAF6E /* MiniPlayer.swift */,
 				15B75A2D27D66FEE00FFAF6E /* ContentView.swift */,
 				15B75A2F27D66FEF00FFAF6E /* Assets.xcassets */,
 				15B75A3127D66FEF00FFAF6E /* Preview Content */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B75A2E27D66FEE00FFAF6E /* ContentView.swift in Sources */,
+				15B75A3C27D67CE800FFAF6E /* MiniPlayer.swift in Sources */,
+				15B75A3A27D6715A00FFAF6E /* LibraryView.swift in Sources */,
 				15B75A2C27D66FEE00FFAF6E /* AppleMusicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +285,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
