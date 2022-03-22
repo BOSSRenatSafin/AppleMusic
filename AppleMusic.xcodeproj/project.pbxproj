@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153598C427EA3583008F6FCC /* MediaEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153598C327EA3583008F6FCC /* MediaEditing.swift */; };
 		15B75A2C27D66FEE00FFAF6E /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A2B27D66FEE00FFAF6E /* AppleMusicApp.swift */; };
 		15B75A2E27D66FEE00FFAF6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A2D27D66FEE00FFAF6E /* ContentView.swift */; };
 		15B75A3027D66FEF00FFAF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B75A2F27D66FEF00FFAF6E /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153598C327EA3583008F6FCC /* MediaEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaEditing.swift; sourceTree = "<group>"; };
 		15B75A2827D66FEE00FFAF6E /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B75A2B27D66FEE00FFAF6E /* AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicApp.swift; sourceTree = "<group>"; };
 		15B75A2D27D66FEE00FFAF6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				15B75A2D27D66FEE00FFAF6E /* ContentView.swift */,
 				15B75A2F27D66FEF00FFAF6E /* Assets.xcassets */,
 				15B75A3127D66FEF00FFAF6E /* Preview Content */,
+				153598C327EA3583008F6FCC /* MediaEditing.swift */,
 			);
 			path = AppleMusic;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B75A2E27D66FEE00FFAF6E /* ContentView.swift in Sources */,
+				153598C427EA3583008F6FCC /* MediaEditing.swift in Sources */,
 				15B75A3C27D67CE800FFAF6E /* MiniPlayer.swift in Sources */,
 				15B75A3A27D6715A00FFAF6E /* LibraryView.swift in Sources */,
 				15B75A2C27D66FEE00FFAF6E /* AppleMusicApp.swift in Sources */,
