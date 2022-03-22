@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct LibraryView: View {
+    
+    @State var isEditing = true
+    
     var body: some View {
         NavigationView {
             TabView {
                 VStack {
                     Spacer()
-                    Text("Ищите совю музыку?")
-                        .bold()
-                        .font(.title)
-                    Text("Здесь появится купленная вами в iTunes Store музыка.")
-                        .multilineTextAlignment(.center)
+                    if isEditing {
+                        Text("Ищите совю музыку?")
+                            .bold()
+                            .font(.title)
+                        Text("Здесь появится купленная вами в iTunes Store музыка.")
+                            .multilineTextAlignment(.center)
+                    } else {
+                        MediaEditing()
+                    }
                     Spacer()
                     VStack {
                         HStack(spacing: 15) {
@@ -74,9 +81,13 @@ struct LibraryView: View {
             }
             .navigationTitle("Медиатека")
             .navigationBarItems(trailing: Button(action: {
-                
+                isEditing.toggle()
             }, label: {
-                Text("править")
+                if isEditing {
+                    Text("править")
+                } else {
+                    Text("готово")
+                }
             }))
             .accentColor(.red)
             
