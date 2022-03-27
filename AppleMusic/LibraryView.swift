@@ -22,8 +22,10 @@ struct LibraryView: View {
                             .font(.title)
                         Text("Здесь появится купленная вами в iTunes Store музыка.")
                             .multilineTextAlignment(.center)
+                            .environment(\.editMode, .constant(EditMode.inactive))
                     } else {
                         MediaEditing()
+                            .environment(\.editMode, .constant(EditMode.active))
                     }
                     Spacer()
                     VStack {
@@ -90,7 +92,6 @@ struct LibraryView: View {
                 }
             }))
             .accentColor(.red)
-            
         }
     }
 }
