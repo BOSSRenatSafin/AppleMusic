@@ -16,7 +16,7 @@ struct MediaLibrary: View {
             VStack {
                 Spacer()
                 if isEditing {
-                    Text("Ищите совю музыку?")
+                    Text("Ищите свою музыку?")
                         .bold()
                         .font(.title)
                     Text("Здесь появится купленная вами в iTunes Store музыка.")
