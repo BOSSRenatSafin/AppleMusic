@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct RadioVStack: View {
+    
     var colum = [
         GridItem(.fixed(440))]
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             LazyVGrid(columns: colum, alignment: .leading) {
