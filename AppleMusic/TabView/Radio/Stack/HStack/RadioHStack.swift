@@ -21,11 +21,12 @@ struct RadioHStack: View {
                         Text(dataHStack.firstTitle)
                             .foregroundColor(.secondary)
                         Text(dataHStack.secondTitle)
-                        Text(dataHStack.firstTitle)
+                        Text(dataHStack.thirdTitle)
                             .foregroundColor(.secondary)
                         Image(dataHStack.image)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
+                            .cornerRadius(10)
                     }
                 }
             }
