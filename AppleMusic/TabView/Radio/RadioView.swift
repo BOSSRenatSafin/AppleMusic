@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct RadioView: View {
+    var row = [
+        GridItem(.fixed(400))
+    ]
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            ScrollView {
+                RadioHStack()
+                RadioVStack()
+            }                .navigationTitle("Радио")
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
