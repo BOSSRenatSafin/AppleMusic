@@ -14,9 +14,10 @@ struct RadioHStack: View {
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: row) {
+            LazyHGrid(rows: row, alignment: .center) {
+                Spacer()
+                    .frame(width: 12)
                 ForEach(dataHStack) {dataHStack in
-                    Spacer()
                     VStack(alignment: .leading) {
                         Text(dataHStack.firstTitle)
                             .foregroundColor(.secondary)
