@@ -10,38 +10,37 @@ import SwiftUI
 struct RadioVStack: View {
     
     var colum = [
-        GridItem(.fixed(440))]
+        GridItem(.flexible())]
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             LazyVGrid(columns: colum, alignment: .leading) {
                 HStack {
                     Spacer()
-                        .frame(width: 25)
+                        .frame(width: Constants.radioVStackHStackSpacer)
                     Text("Станции")
-                        .font(.title)
+                        .font(.system(size: Constants.radioVStackTextFountSize, weight: .bold, design: .default))
                 }
-                ForEach(dataVStack) {dataVStack in
+                ForEach(RadioDataVStack.radioDataVStack) {cell in
                     HStack {
-                        Spacer()
-                            .frame(width: 12)
-                        Image(dataVStack.image)
+                        Image(cell.image)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 100, height: 100)
-                            .cornerRadius(5)
+                            .frame(width: Constants.radioVStackImageWidth, height: Constants.radioVStackImageHeight)
+                            .cornerRadius(Constants.radioVStackImageCornerRadius)
                         VStack(alignment: .leading) {
-                            Text(dataVStack.firstTitle)
-                                .frame(height: 10)
-                            Text(dataVStack.secondTitle)
+                            Text(cell.firstTitle)
+                                .frame(height: Constants.radioVStackVStackTextHeight)
+                            Text(cell.secondTitle)
                                 .foregroundColor(.secondary)
                         }
-                        .frame(width: 280, height: 40, alignment: .leading)
                     }
-                    .frame(width: 420, height: 100)
+                    Divider()
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
+        .frame(maxWidth: .infinity)
     }
 }
 

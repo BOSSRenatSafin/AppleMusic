@@ -10,27 +10,32 @@ import SwiftUI
 struct RadioHStack: View {
     
     var row = [
-        GridItem(.fixed(340))]
+        GridItem(.fixed(Constants.radioHStackGridItem))]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: row, alignment: .center) {
-                Spacer()
-                    .frame(width: 12)
-                ForEach(dataHStack) {dataHStack in
+            Divider()
+            Spacer()
+                .frame(height: Constants.radioHStackSpacer)
+            LazyHGrid(rows: row, spacing: Constants.radioHStackGridSpacing) {
+                ForEach(RadioDataHStack.radioDataHStack) {cell in
                     VStack(alignment: .leading) {
-                        Text(dataHStack.firstTitle)
+                        Text(cell.firstTitle)
                             .foregroundColor(.secondary)
-                        Text(dataHStack.secondTitle)
-                        Text(dataHStack.thirdTitle)
+                        Text(cell.secondTitle)
+                        Text(cell.thirdTitle)
                             .foregroundColor(.secondary)
-                        Image(dataHStack.image)
+                        Image(cell.image)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .cornerRadius(10)
+                            .cornerRadius(Constants.radioHStackImageCornerRadius)
                     }
                 }
             }
+            .frame(height: Constants.radioHStackGridFrame)
+            Spacer()
+                .frame(height: Constants.radioHStackSpacer)
+            Divider()
         }
     }
 }
