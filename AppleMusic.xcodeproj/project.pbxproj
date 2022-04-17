@@ -9,35 +9,30 @@
 /* Begin PBXBuildFile section */
 		15077053280361D100F97303 /* RadioHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15077052280361D100F97303 /* RadioHStack.swift */; };
 		15077055280361E100F97303 /* RadioVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15077054280361E100F97303 /* RadioVStack.swift */; };
-		15077059280499D600F97303 /* ModelRadioHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15077058280499D500F97303 /* ModelRadioHStack.swift */; };
-		1507705B28049B6C00F97303 /* DataHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507705A28049B6C00F97303 /* DataHStack.swift */; };
-		1507705D2804B0E400F97303 /* ModelVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507705C2804B0E400F97303 /* ModelVStack.swift */; };
-		1507705F2804B0F300F97303 /* DataVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507705E2804B0F300F97303 /* DataVStack.swift */; };
+		15077059280499D600F97303 /* RadioDataHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15077058280499D500F97303 /* RadioDataHStack.swift */; };
+		1507705D2804B0E400F97303 /* RadioDataVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1507705C2804B0E400F97303 /* RadioDataVStack.swift */; };
 		153598C427EA3583008F6FCC /* MediaEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153598C327EA3583008F6FCC /* MediaEditing.swift */; };
 		155D892D27F9C054000C084F /* AppleMusicTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D892C27F9C054000C084F /* AppleMusicTabView.swift */; };
 		155D893227F9C229000C084F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D893127F9C229000C084F /* SearchView.swift */; };
-		155D893627F9CC8A000C084F /* ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D893527F9CC8A000C084F /* ModelCell.swift */; };
-		155D893927F9CD82000C084F /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D893827F9CD82000C084F /* Cells.swift */; };
+		155D893927F9CD82000C084F /* MediaLibraryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D893827F9CD82000C084F /* MediaLibraryData.swift */; };
 		15B75A2C27D66FEE00FFAF6E /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A2B27D66FEE00FFAF6E /* AppleMusicApp.swift */; };
 		15B75A2E27D66FEE00FFAF6E /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A2D27D66FEE00FFAF6E /* RadioView.swift */; };
 		15B75A3027D66FEF00FFAF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B75A2F27D66FEF00FFAF6E /* Assets.xcassets */; };
 		15B75A3327D66FEF00FFAF6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B75A3227D66FEF00FFAF6E /* Preview Assets.xcassets */; };
 		15B75A3A27D6715A00FFAF6E /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A3927D6715A00FFAF6E /* MediaLibrary.swift */; };
 		15B75A3C27D67CE800FFAF6E /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A3B27D67CE800FFAF6E /* MiniPlayer.swift */; };
+		15D7F806280BF97C00614807 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7F805280BF97C00614807 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15077052280361D100F97303 /* RadioHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioHStack.swift; sourceTree = "<group>"; };
 		15077054280361E100F97303 /* RadioVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioVStack.swift; sourceTree = "<group>"; };
-		15077058280499D500F97303 /* ModelRadioHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRadioHStack.swift; sourceTree = "<group>"; };
-		1507705A28049B6C00F97303 /* DataHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHStack.swift; sourceTree = "<group>"; };
-		1507705C2804B0E400F97303 /* ModelVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelVStack.swift; sourceTree = "<group>"; };
-		1507705E2804B0F300F97303 /* DataVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataVStack.swift; sourceTree = "<group>"; };
+		15077058280499D500F97303 /* RadioDataHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioDataHStack.swift; sourceTree = "<group>"; };
+		1507705C2804B0E400F97303 /* RadioDataVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioDataVStack.swift; sourceTree = "<group>"; };
 		153598C327EA3583008F6FCC /* MediaEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaEditing.swift; sourceTree = "<group>"; };
 		155D892C27F9C054000C084F /* AppleMusicTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicTabView.swift; sourceTree = "<group>"; };
 		155D893127F9C229000C084F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		155D893527F9CC8A000C084F /* ModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCell.swift; sourceTree = "<group>"; };
-		155D893827F9CD82000C084F /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		155D893827F9CD82000C084F /* MediaLibraryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryData.swift; sourceTree = "<group>"; };
 		15B75A2827D66FEE00FFAF6E /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B75A2B27D66FEE00FFAF6E /* AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicApp.swift; sourceTree = "<group>"; };
 		15B75A2D27D66FEE00FFAF6E /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
@@ -45,6 +40,7 @@
 		15B75A3227D66FEF00FFAF6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15B75A3927D6715A00FFAF6E /* MediaLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibrary.swift; sourceTree = "<group>"; };
 		15B75A3B27D67CE800FFAF6E /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
+		15D7F805280BF97C00614807 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +66,7 @@
 		150770562804900900F97303 /* HStack */ = {
 			isa = PBXGroup;
 			children = (
-				15077058280499D500F97303 /* ModelRadioHStack.swift */,
-				1507705A28049B6C00F97303 /* DataHStack.swift */,
+				15077058280499D500F97303 /* RadioDataHStack.swift */,
 				15077052280361D100F97303 /* RadioHStack.swift */,
 			);
 			path = HStack;
@@ -80,8 +75,7 @@
 		150770572804901300F97303 /* VStack */ = {
 			isa = PBXGroup;
 			children = (
-				1507705C2804B0E400F97303 /* ModelVStack.swift */,
-				1507705E2804B0F300F97303 /* DataVStack.swift */,
+				1507705C2804B0E400F97303 /* RadioDataVStack.swift */,
 				15077054280361E100F97303 /* RadioVStack.swift */,
 			);
 			path = VStack;
@@ -124,6 +118,7 @@
 		155D893027F9C161000C084F /* TabView */ = {
 			isa = PBXGroup;
 			children = (
+				15D7F805280BF97C00614807 /* Constants.swift */,
 				155D892C27F9C054000C084F /* AppleMusicTabView.swift */,
 				155D893327F9CB5E000C084F /* MiniPlayer */,
 				155D892827F9BE6A000C084F /* MediaLibrary */,
@@ -141,19 +136,18 @@
 			path = MiniPlayer;
 			sourceTree = "<group>";
 		};
-		155D893727F9CD6A000C084F /* Cells */ = {
+		155D893727F9CD6A000C084F /* MediaLibraryData */ = {
 			isa = PBXGroup;
 			children = (
-				155D893527F9CC8A000C084F /* ModelCell.swift */,
-				155D893827F9CD82000C084F /* Cells.swift */,
+				155D893827F9CD82000C084F /* MediaLibraryData.swift */,
 			);
-			path = Cells;
+			path = MediaLibraryData;
 			sourceTree = "<group>";
 		};
 		155D893A27F9D093000C084F /* MediaEditing */ = {
 			isa = PBXGroup;
 			children = (
-				155D893727F9CD6A000C084F /* Cells */,
+				155D893727F9CD6A000C084F /* MediaLibraryData */,
 				153598C327EA3583008F6FCC /* MediaEditing.swift */,
 			);
 			path = MediaEditing;
@@ -264,20 +258,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1507705F2804B0F300F97303 /* DataVStack.swift in Sources */,
 				15B75A2E27D66FEE00FFAF6E /* RadioView.swift in Sources */,
 				153598C427EA3583008F6FCC /* MediaEditing.swift in Sources */,
 				15B75A3C27D67CE800FFAF6E /* MiniPlayer.swift in Sources */,
-				1507705D2804B0E400F97303 /* ModelVStack.swift in Sources */,
-				15077059280499D600F97303 /* ModelRadioHStack.swift in Sources */,
-				155D893627F9CC8A000C084F /* ModelCell.swift in Sources */,
-				155D893927F9CD82000C084F /* Cells.swift in Sources */,
+				1507705D2804B0E400F97303 /* RadioDataVStack.swift in Sources */,
+				15077059280499D600F97303 /* RadioDataHStack.swift in Sources */,
+				155D893927F9CD82000C084F /* MediaLibraryData.swift in Sources */,
 				15077055280361E100F97303 /* RadioVStack.swift in Sources */,
+				15D7F806280BF97C00614807 /* Constants.swift in Sources */,
 				155D893227F9C229000C084F /* SearchView.swift in Sources */,
 				155D892D27F9C054000C084F /* AppleMusicTabView.swift in Sources */,
 				15B75A3A27D6715A00FFAF6E /* MediaLibrary.swift in Sources */,
 				15B75A2C27D66FEE00FFAF6E /* AppleMusicApp.swift in Sources */,
-				1507705B28049B6C00F97303 /* DataHStack.swift in Sources */,
 				15077053280361D100F97303 /* RadioHStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

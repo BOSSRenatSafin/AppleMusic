@@ -13,7 +13,7 @@ struct MediaEditing: View {
     
     var body: some View {
         List(selection: $multiSelection) {
-            ForEach (cells) { cells in
+            ForEach (MediaLibraryData.mediaLibraryData) { cells in
                 HStack{
                     Image(systemName: cells.nameImage)
                         .foregroundColor(.red)
@@ -27,8 +27,8 @@ struct MediaEditing: View {
     
     //MARK: Move Row
     func move(from source: IndexSet, to destinstion: Int) {
-        for index in cells {
-            cells.move(fromOffsets: source, toOffset: destinstion)
+        for _ in MediaLibraryData.mediaLibraryData {
+            MediaLibraryData.mediaLibraryData.move(fromOffsets: source, toOffset: destinstion)
         }
     }
 }

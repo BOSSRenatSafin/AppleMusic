@@ -10,15 +10,24 @@ import SwiftUI
 struct RadioView: View {
     
     var row = [
-        GridItem(.fixed(400))]
+        GridItem(.fixed(Constants.radioViewGridItem))]
     
     var body: some View {
-        NavigationView {
-            ScrollView {
-                RadioHStack()
-                RadioVStack()
+        GeometryReader { geometry in
+            ZStack(alignment: .bottom) {
+                NavigationView {
+                    ScrollView(showsIndicators: false) {
+                        RadioHStack()
+                            .frame(width: geometry.size.width * Constants.radioViewHStackWidth)
+                        RadioVStack()
+                            .frame(width: geometry.size.width * Constants.radioViewVStackWidth)
+                    }
+                    .padding(.horizontal)
+                    .navigationTitle("Радио")
+                }
+                MiniPlayer()
+                    .opacity(Constants.radioViewMiniPlayerOpacity)
             }
-            .navigationTitle("Радио")
         }
     }
 }
