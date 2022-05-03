@@ -10,7 +10,7 @@ import SwiftUI
 struct MainSearchScreen: View {
     
     var colums = [
-        GridItem(.flexible(), spacing: -10),
+        GridItem(.flexible(), spacing: Constants.mainSearchScreenGridItemSpacing),
         GridItem(.flexible())
     ]
     
@@ -20,21 +20,26 @@ struct MainSearchScreen: View {
                 VStack(alignment: .leading) {
                     HStack {
                         Spacer()
-                            .frame(width: 20)
+                            .frame(width: Constants.mainSearchScreenGridItemSpacingSpacerWidth)
                         Text("Поиск по категориям")
-                            .font(.system(size: 20, weight: .bold, design: .default))
+                            .font(.system(size: Constants.mainSearchScreenGridItemSpacingTextSize, weight: .bold, design: .default))
                     }
                     Spacer()
-                        .frame(height: 1)
+                        .frame(height: Constants.mainSearchScreenGridItemSpacingSpacerHeight)
                     HStack {
                         Spacer()
-                        LazyVGrid(columns: colums, alignment: .center, spacing: 3) {
+                        LazyVGrid(columns: colums, alignment: .center, spacing: Constants.mainSearchScreenGridItemSpacingLazyVGridSpacing) {
                             ForEach(DataMainSearchScreen.dataMainSearchScreen) {cell in
-                                Image(cell.image)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .cornerRadius(10)
-                                    .frame(width: geometry.size.width * 0.43, height: geometry.size.width * 0.32)
+                                NavigationLink {
+                                    SwitchSearchScreenView()
+                                } label: {
+                                    Image(cell.image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .cornerRadius(Constants.mainSearchScreenGridItemSpacingImageCornerRadius)
+                                        .frame(width: geometry.size.width * Constants.mainSearchScreenGridItemSpacingImageFrameWidth, height: geometry.size.width * Constants.mainSearchScreenGridItemSpacingImageFrameHeight)
+                                }
+
                             }
                         }
                         Spacer()

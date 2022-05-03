@@ -16,7 +16,7 @@ struct Constants {
     static let imgeFrameHeight: CGFloat = 50
     static let imgeCornerRadius: CGFloat = 3
     static let vStackSpacing: CGFloat = 4
-    static let miniPlayerOpacity: CGFloat = 0.95
+    static let miniPlayerOpacity: CGFloat = 0.90
     
     // MARK: - MediaLibrary
     
@@ -43,8 +43,39 @@ struct Constants {
     static let radioViewHStackWidth: CGFloat = 0.95
     static let radioViewVStackWidth: CGFloat = 0.95
     static let radioViewMiniPlayerOpacity: CGFloat = 1
+    
+    // MARK: - Search
+    
+    // MARK: - MainSearchScreen
+    static let mainSearchScreenGridItemSpacing: CGFloat = -10
+    static let mainSearchScreenGridItemSpacingSpacerWidth: CGFloat = 20
+    static let mainSearchScreenGridItemSpacingSpacerHeight: CGFloat = 1
+    static let mainSearchScreenGridItemSpacingTextSize: CGFloat = 20
+    static let mainSearchScreenGridItemSpacingLazyVGridSpacing: CGFloat = 3
+    static let mainSearchScreenGridItemSpacingImageCornerRadius: CGFloat = 10
+    static let mainSearchScreenGridItemSpacingImageFrameWidth: CGFloat = 0.43
+    static let mainSearchScreenGridItemSpacingImageFrameHeight: CGFloat = 0.32
+    
+    // MARK: - FirstRowSwitchSearchScreen
+    static let firstRowSwitchSearchScreenGridItem: CGFloat = 330
+    static let firstRowSwitchSearchScreenSpacer: CGFloat = 15
+    static let firstRowSwitchSearchScreenGridSpacing: CGFloat = 10
+    static let firstRowSwitchSearchScreenImageCornerRadius: CGFloat = 10
+    static let firstRowSwitchSearchScreenGridFrame: CGFloat = 320
+    static let firstRowSwitchSearchScreenSpacerTop: CGFloat = 25
+    
+    // MARK: -SecondRowSwitchSearchScreen
+    static let secondRowSwitchSearchScreenGridItem: CGFloat = 300
+    static let secondRowSwitchSearchScreenImageCornerRadius: CGFloat = 10
+    static let secondRowSwitchSearchScreenImageWidth: CGFloat = 200
+    static let secondRowSwitchSearchScreenTextWidth: CGFloat = 200
+    static let secondRowSwitchSearchScreenTextLineLimit = 1
+    static let secondRowSwitchSearchScreenHGridFrame: CGFloat = 250
+    static let secondRowSwitchSearchScreenTextSize: CGFloat = 20
+    static let secondRowSwitchSearchScreenSpacerFrameHeight: CGFloat = 100
+    
 }
 
 
 
-                   
+

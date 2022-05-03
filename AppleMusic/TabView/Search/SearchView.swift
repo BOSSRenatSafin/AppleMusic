@@ -9,9 +9,13 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        NavigationView {
-            MainSearchScreen()
-                .navigationTitle("Поиск")
+        ZStack(alignment: .bottom) {
+            NavigationView {
+                MainSearchScreen()
+                    .navigationTitle("Поиск")
+            }
+            MiniPlayer()
+                .opacity(Constants.radioViewMiniPlayerOpacity)
         }
     }
 }
