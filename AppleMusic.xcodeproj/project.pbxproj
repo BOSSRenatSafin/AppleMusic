@@ -31,6 +31,7 @@
 		15D7F806280BF97C00614807 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7F805280BF97C00614807 /* Constants.swift */; };
 		15E750422821BC8600C74B5F /* SearchBarTrackRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E750412821BC8600C74B5F /* SearchBarTrackRowView.swift */; };
 		15E7504428291F3100C74B5F /* SearchBarDataTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7504328291F3100C74B5F /* SearchBarDataTrack.swift */; };
+		15E75049282A4AA200C74B5F /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E75048282A4AA200C74B5F /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		15D7F805280BF97C00614807 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		15E750412821BC8600C74B5F /* SearchBarTrackRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTrackRowView.swift; sourceTree = "<group>"; };
 		15E7504328291F3100C74B5F /* SearchBarDataTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarDataTrack.swift; sourceTree = "<group>"; };
+		15E75048282A4AA200C74B5F /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				15B75A3B27D67CE800FFAF6E /* MiniPlayer.swift */,
+				15E75048282A4AA200C74B5F /* BlurView.swift */,
 			);
 			path = MiniPlayer;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			files = (
 				15B75A2E27D66FEE00FFAF6E /* RadioView.swift in Sources */,
 				15202323282061D200CACA16 /* DataFirstRowSwitchSearchScreen.swift in Sources */,
+				15E75049282A4AA200C74B5F /* BlurView.swift in Sources */,
 				153598C427EA3583008F6FCC /* MediaEditing.swift in Sources */,
 				15B75A3C27D67CE800FFAF6E /* MiniPlayer.swift in Sources */,
 				15202321282061A900CACA16 /* FirstRowSwitchSearchScreen.swift in Sources */,

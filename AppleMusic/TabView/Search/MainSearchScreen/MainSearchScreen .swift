@@ -39,7 +39,7 @@ struct MainSearchScreen: View {
                                         .cornerRadius(Constants.mainSearchScreenGridItemSpacingImageCornerRadius)
                                         .frame(width: geometry.size.width * Constants.mainSearchScreenGridItemSpacingImageFrameWidth, height: geometry.size.width * Constants.mainSearchScreenGridItemSpacingImageFrameHeight)
                                 }
-
+                                
                             }
                         }
                         Spacer()

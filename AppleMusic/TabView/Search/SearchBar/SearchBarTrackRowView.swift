@@ -16,14 +16,14 @@ struct SearchBarTrackRowView: View {
                     Image(track.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .cornerRadius(10)
-                        .frame(width: 70, height: 70)
+                        .cornerRadius(Constants.searchBarTrackRowViewCornerRadius)
+                        .frame(width: Constants.searchBarTrackRowViewImageFrame, height: Constants.searchBarTrackRowViewImageFrame)
                     VStack(alignment: .leading) {
                         Text(track.trackName)
-                            .lineLimit(1)
+                            .lineLimit(Constants.searchBarTrackRowViewTextLineLimit)
                         Text(track.trackExecutor)
                             .foregroundColor(.secondary)
-                            .lineLimit(1)
+                            .lineLimit(Constants.searchBarTrackRowViewTextLineLimit)
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)

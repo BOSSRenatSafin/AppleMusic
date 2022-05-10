@@ -21,6 +21,7 @@ struct SearchView: View {
                     })
                 }
         }
+        .padding(.bottom, Constants.searchViewPadding)
     }
 }
 
