@@ -29,6 +29,8 @@
 		15B75A3A27D6715A00FFAF6E /* MediaLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A3927D6715A00FFAF6E /* MediaLibrary.swift */; };
 		15B75A3C27D67CE800FFAF6E /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B75A3B27D67CE800FFAF6E /* MiniPlayer.swift */; };
 		15D7F806280BF97C00614807 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D7F805280BF97C00614807 /* Constants.swift */; };
+		15E750422821BC8600C74B5F /* SearchBarTrackRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E750412821BC8600C74B5F /* SearchBarTrackRowView.swift */; };
+		15E7504428291F3100C74B5F /* SearchBarDataTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7504328291F3100C74B5F /* SearchBarDataTrack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		15B75A3927D6715A00FFAF6E /* MediaLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibrary.swift; sourceTree = "<group>"; };
 		15B75A3B27D67CE800FFAF6E /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
 		15D7F805280BF97C00614807 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		15E750412821BC8600C74B5F /* SearchBarTrackRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTrackRowView.swift; sourceTree = "<group>"; };
+		15E7504328291F3100C74B5F /* SearchBarDataTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarDataTrack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,6 @@
 			children = (
 				1520231D282060E100CACA16 /* FirstRowSwitchSearchScreen */,
 				1520231E2820611500CACA16 /* SecondRowSwitchSearchScreen */,
-				1520231F2820613B00CACA16 /* ThirdRowSwitchSearchScreen */,
 			);
 			path = SwitchSearchScreenStack;
 			sourceTree = "<group>";
@@ -141,13 +144,6 @@
 			path = SecondRowSwitchSearchScreen;
 			sourceTree = "<group>";
 		};
-		1520231F2820613B00CACA16 /* ThirdRowSwitchSearchScreen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ThirdRowSwitchSearchScreen;
-			sourceTree = "<group>";
-		};
 		155D892827F9BE6A000C084F /* MediaLibrary */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +164,7 @@
 		155D892E27F9C05E000C084F /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				15E750402821BC6700C74B5F /* SearchBar */,
 				15202316281EEE4000CACA16 /* MainSearchScreen */,
 				1520231928204A9C00CACA16 /* SwitchSearchScreen */,
 				155D893127F9C229000C084F /* SearchView.swift */,
@@ -257,6 +254,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		15E750402821BC6700C74B5F /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				15E7504328291F3100C74B5F /* SearchBarDataTrack.swift */,
+				15E750412821BC8600C74B5F /* SearchBarTrackRowView.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,12 +343,14 @@
 				15202318281EEE7200CACA16 /* DataMainSearchScreen.swift in Sources */,
 				15953FEA28206C4500E04D9F /* SecondRowSwitchSearchScreen.swift in Sources */,
 				15953FE828206C0100E04D9F /* DataSecondRowSwitchSearchScreen.swift in Sources */,
+				15E750422821BC8600C74B5F /* SearchBarTrackRowView.swift in Sources */,
 				15202315281EE8BE00CACA16 /* MainSearchScreen .swift in Sources */,
 				155D893927F9CD82000C084F /* MediaLibraryData.swift in Sources */,
 				15077055280361E100F97303 /* RadioVStack.swift in Sources */,
 				15D7F806280BF97C00614807 /* Constants.swift in Sources */,
 				1520231B28204ADE00CACA16 /* SwitchSearchScreenView.swift in Sources */,
 				155D893227F9C229000C084F /* SearchView.swift in Sources */,
+				15E7504428291F3100C74B5F /* SearchBarDataTrack.swift in Sources */,
 				155D892D27F9C054000C084F /* AppleMusicTabView.swift in Sources */,
 				15B75A3A27D6715A00FFAF6E /* MediaLibrary.swift in Sources */,
 				15B75A2C27D66FEE00FFAF6E /* AppleMusicApp.swift in Sources */,

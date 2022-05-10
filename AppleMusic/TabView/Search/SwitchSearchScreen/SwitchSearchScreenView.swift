@@ -15,8 +15,6 @@ struct SwitchSearchScreenView: View {
                     FirstRowSwitchSearchScreen()
                     SecondRowSwitchSearchScreen()
                 }
-                MiniPlayer()
-                    .opacity(Constants.radioViewMiniPlayerOpacity)
             }
         }
     }

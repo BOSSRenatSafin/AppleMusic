@@ -29,7 +29,6 @@ struct MediaLibrary: View {
                         .environment(\.editMode, .constant(EditMode.active))
                 }
                 Spacer()
-                MiniPlayer()
             }
             .navigationTitle("Медиатека")
             .navigationBarItems(trailing: Button(action: {
