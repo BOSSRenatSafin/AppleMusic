@@ -25,8 +25,6 @@ struct RadioView: View {
                     .padding(.horizontal)
                     .navigationTitle("Радио")
                 }
-                MiniPlayer()
-                    .opacity(Constants.radioViewMiniPlayerOpacity)
             }
         }
     }

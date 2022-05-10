@@ -8,15 +8,35 @@
 import SwiftUI
 
 struct SearchView: View {
+    @ObservedObject var data = SearchBarData()
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             NavigationView {
-                MainSearchScreen()
-                    .navigationTitle("Поиск")
-            }
-            MiniPlayer()
-                .opacity(Constants.radioViewMiniPlayerOpacity)
+                SearchableView(searchingFor: $data.searchingFor, searchResults: $data.searchResults)
+            }.searchable(text: $data.searchingFor, placement: .navigationBarDrawer(displayMode: .always), prompt: "Артисты, песни, тексты и др.")
+                .onChange(of: data.searchingFor) { searchinFor in
+                    data.searchResults = SearchBarDataTrack.dataTrack.filter({ track in
+                        track.trackName.lowercased().contains(searchinFor.lowercased())
+                    })
+                }
         }
+    }
+}
+
+struct SearchableView: View {
+    @Environment(\.isSearching) var isSearching
+    @Binding var searchingFor: String
+    @Binding var searchResults: [SearchBarDataTrack]
+    
+    var body: some View {
+        if isSearching {
+            List(searchingFor.isEmpty ? SearchBarDataTrack.dataTrack : searchResults) { name in
+                SearchBarTrackRowView(track: name)
+            }
+            .listStyle(.grouped)    } else {
+                MainSearchScreen()
+                .navigationTitle("Поиск")    }
     }
 }
 
@@ -25,3 +45,4 @@ struct SearchView_Previews: PreviewProvider {
         SearchView()
     }
 }
+

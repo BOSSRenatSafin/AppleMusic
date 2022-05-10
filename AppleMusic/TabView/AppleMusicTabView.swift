@@ -9,27 +9,30 @@ import SwiftUI
 
 struct AppleMusicTabView: View {
     var body: some View {
-        TabView {
-            MediaLibrary()
-            .tabItem {
-                Image("collection.music")
-                    .renderingMode(.template)
-                Text("Медиатека")
+        ZStack(alignment: .bottom) {
+            TabView {
+                MediaLibrary()
+                    .tabItem {
+                        Image("collection.music")
+                            .renderingMode(.template)
+                        Text("Медиатека")
+                    }
+                
+                RadioView()
+                    .tabItem {
+                        Image(systemName: "dot.radiowaves.left.and.right")
+                        Text("Радио")
+                    }
+                
+                SearchView()
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Поиск")
+                    }
             }
-            
-            RadioView()
-                .tabItem {
-                    Image(systemName: "dot.radiowaves.left.and.right")
-                    Text("Радио")
-                }
-            
-            SearchView()
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Поиск")
-                }
+            .accentColor(.red)
+            MiniPlayer()
         }
-        .accentColor(.red)
     }
 }
 

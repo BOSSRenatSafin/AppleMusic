@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MiniPlayer: View {
+    @State var expand: Bool = false
+    
     var body: some View {
         VStack {
             HStack(spacing: Constants.hStackSpacing) {
@@ -43,6 +45,12 @@ struct MiniPlayer: View {
             .background(Color.init("MiniPlayerBackground"))
             .opacity(Constants.miniPlayerOpacity)
         }
+        .frame(maxHeight: expand ? .infinity : 80)
+        .onTapGesture(perform: {
+            withAnimation(  .spring()){expand.toggle()}
+        })
+        .ignoresSafeArea()
+        .offset(y: expand ? 0 : -48)
     }
 }
     
