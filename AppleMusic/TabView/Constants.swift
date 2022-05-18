@@ -103,6 +103,7 @@ struct Constants {
     static let searchBarTrackRowViewCornerRadius: CGFloat = 10
     static let searchBarTrackRowViewImageFrame: CGFloat = 70
     static let searchBarTrackRowViewTextLineLimit = 1
+    static let searchViewSpacer: CGFloat = 50
 }
 
 

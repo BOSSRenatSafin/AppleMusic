@@ -26,7 +26,8 @@ extension SearchBarDataTrack {
         SearchBarDataTrack(image: "SearchBarTrackImage3", trackName: "Романтик", trackExecutor: "XASSA"),
         SearchBarDataTrack(image: "SearchBarTrackImage4", trackName: "Ой, Молодой", trackExecutor: "FINIK"),
         SearchBarDataTrack(image: "SearchBarTrackImage5", trackName: "Numb", trackExecutor: "Sinny & 7vvch"),
-        SearchBarDataTrack(image: "SearchBarTrackImage6", trackName: "Где лавэ", trackExecutor: "Nixizor")]
+        SearchBarDataTrack(image: "SearchBarTrackImage6", trackName: "Где лавэ", trackExecutor: "Nixizor"),
+    ]
 }
 
 
