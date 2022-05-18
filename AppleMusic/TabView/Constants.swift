@@ -17,6 +17,27 @@ struct Constants {
     static let imgeCornerRadius: CGFloat = 3
     static let vStackSpacing: CGFloat = 4
     static let miniPlayerOpacity: CGFloat = 0.90
+    static let miniPlayerSpacerMinLenght: CGFloat = 0
+    static let miniPlayerCapsulFrameZero: CGFloat = 0
+    static let miniPlayerCapsulFrame: CGFloat = 60
+    static let miniPlayerCapsuleFrameHeight: CGFloat = 4
+    static let miniPlayerCapsuleOpacityZero: CGFloat = 0
+    static let miniPlayerCapsuleOpacity: CGFloat = 1
+    static let miniPlayerZero: CGFloat = 0
+    static let miniPlayerCapsulePadding: CGFloat = 30
+    static let miniPlayerTextSpacing: CGFloat = 15
+    static let miniPlayerButtonHStackSpacing: CGFloat = 90
+    static let miniPlayerButtonPlaySize: CGFloat = 55
+    static let miniPlayerSliderSpacing: CGFloat = 15
+    static let miniPlayerButtonBottomSpacing: CGFloat = 22
+    static let miniPlayerButtonBottomPadding: CGFloat = 15
+    static let miniPlayerOpacityExpended: CGFloat = 1
+    static let miniPlayerMaxHeightExpended: CGFloat = 80
+    static let miniPlayerCornerRadiusExpended: CGFloat = 20
+    static let miniPlayerOffSets: CGFloat = -48
+    static let miniPlayerWithAnimationResponse: CGFloat = 0.5
+    static let miniPlayerWithAnimationDampingFraction: CGFloat = 0.95
+    static let miniPlayerWithAnimationBlendDuration: CGFloat = 0.95
     
     // MARK: - MediaLibrary
     
@@ -64,7 +85,7 @@ struct Constants {
     static let firstRowSwitchSearchScreenGridFrame: CGFloat = 320
     static let firstRowSwitchSearchScreenSpacerTop: CGFloat = 25
     
-    // MARK: -SecondRowSwitchSearchScreen
+    // MARK: - SecondRowSwitchSearchScreen
     static let secondRowSwitchSearchScreenGridItem: CGFloat = 300
     static let secondRowSwitchSearchScreenImageCornerRadius: CGFloat = 10
     static let secondRowSwitchSearchScreenImageWidth: CGFloat = 200
@@ -74,6 +95,15 @@ struct Constants {
     static let secondRowSwitchSearchScreenTextSize: CGFloat = 20
     static let secondRowSwitchSearchScreenSpacerFrameHeight: CGFloat = 100
     
+    // MARK: - Search
+    static let searchViewPadding: CGFloat = 80
+    static let serachViewFirstRowSwitchSearchScreenTextFountSize: CGFloat = 35
+    static let serachViewFirstRowSwitchSearchScreenTextLineLimit = 2
+    static let serachViewFirstRowSwitchSearchScreenTextFrame: CGFloat = 100
+    static let searchBarTrackRowViewCornerRadius: CGFloat = 10
+    static let searchBarTrackRowViewImageFrame: CGFloat = 70
+    static let searchBarTrackRowViewTextLineLimit = 1
+    static let searchViewSpacer: CGFloat = 50
 }
 
 

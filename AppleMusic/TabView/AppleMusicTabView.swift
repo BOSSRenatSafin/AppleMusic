@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AppleMusicTabView: View {
+    @State var expand = false
+    @Namespace var animation 
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView {
@@ -30,8 +33,7 @@ struct AppleMusicTabView: View {
                         Text("Поиск")
                     }
             }
-            .accentColor(.red)
-            MiniPlayer()
+            MiniPlayer(expand: $expand, animation: animation)
         }
     }
 }
