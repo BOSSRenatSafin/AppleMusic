@@ -16,12 +16,12 @@ struct DataFirstRowSwitchSearchScreen: Identifiable {
 }
 
 extension DataFirstRowSwitchSearchScreen {
-    static var dataFirstRowSwitchSearchScreen: [RadioDataHStack] = [
-        RadioDataHStack(image: "FirstRowSwitchSearchScreen1", firstTitle: "ПРОСТРАНСТВЕННОЕ АУДИО", secondTitle: "-(Deluxe)", thirdTitle: "Ed Sheeran"),
-        RadioDataHStack(image: "FirstRowSwitchSearchScreen2", firstTitle: "НОВИНКИВ ПРОСТРАНСТВЕННОМ АУДИО", secondTitle: "1", thirdTitle: "The Beatles"),
-        RadioDataHStack(image: "FirstRowSwitchSearchScreen3", firstTitle: "НОВИНКИВ ПРОСТРАНСТВЕННОМ АУДИО", secondTitle: "Multitude", thirdTitle: "Stromae"),
-        RadioDataHStack(image: "FirstRowSwitchSearchScreen4", firstTitle: "НОВИНКИВ ПРОСТРАНСТВЕННОМ АУДИО", secondTitle: "Run, Rose, Run", thirdTitle: "Dolly Parton"),
-        RadioDataHStack(image: "FirstRowSwitchSearchScreen5", firstTitle: "ВОСХОД", secondTitle: "Долгожданный дубют певицы уже совсем скоро", thirdTitle: "___"),
-        RadioDataHStack(image: "FirstRowSwitchSearchScreen6", firstTitle: "НОВИНКИВ ПРОСТРАНСТВЕННОМ АУДИО", secondTitle: "Cosas Del Diablo (Special Edition)", thirdTitle: "Adriel Favela")
+    static var dataFirstRowSwitchSearchScreen: [RadioDataFirstSection] = [
+        RadioDataFirstSection(image: "FirstRowSwitchSearchScreen1", firstTitle: "ПРОСТРАНСТВЕННОЕ АУДИО", secondTitle: "-(Deluxe)", thirdTitle: "Ed Sheeran"),
+        RadioDataFirstSection(image: "FirstRowSwitchSearchScreen2", firstTitle: "НОВИНКИВ ПРОСТРАНСТВЕННОМ АУДИО", secondTitle: "1", thirdTitle: "The Beatles"),
+        RadioDataFirstSection(image: "FirstRowSwitchSearchScreen3", firstTitle: "НОВИНКИВ ПРОСТРАНСТВЕННОМ АУДИО", secondTitle: "Multitude", thirdTitle: "Stromae"),
+        RadioDataFirstSection(image: "FirstRowSwitchSearchScreen4", firstTitle: "НОВИНКИВ ПРОСТРАНСТВЕННОМ АУДИО", secondTitle: "Run, Rose, Run", thirdTitle: "Dolly Parton"),
+        RadioDataFirstSection(image: "FirstRowSwitchSearchScreen5", firstTitle: "ВОСХОД", secondTitle: "Долгожданный дубют певицы уже совсем скоро", thirdTitle: "___"),
+        RadioDataFirstSection(image: "FirstRowSwitchSearchScreen6", firstTitle: "НОВИНКИВ ПРОСТРАНСТВЕННОМ АУДИО", secondTitle: "Cosas Del Diablo (Special Edition)", thirdTitle: "Adriel Favela")
     ]
 }

@@ -104,6 +104,21 @@ struct Constants {
     static let searchBarTrackRowViewImageFrame: CGFloat = 70
     static let searchBarTrackRowViewTextLineLimit = 1
     static let searchViewSpacer: CGFloat = 50
+    
+    //MARK: - SearchUIKit
+    static let searchUIKitImageCornerRadius: CGFloat = 6
+    static let searchUIKitImageHeightAnchor: CGFloat = 8.0
+    static let searchUIKitImageWidthAnchor: CGFloat = 0.9
+    static let searchUIKitLabelSize: CGFloat = 25
+    static let searchUIKitCollectionViewTopAnchor: CGFloat = 5
+    static let searchUIKitCollectionViewLeadingAnchor: CGFloat = 20
+    static let searchUIKitCollectionViewTraelingAnchor: CGFloat = -10
+    static let searchUIKitItemSize: CGFloat = 0.1
+    static let searchUIKitGroupSizeWidth: CGFloat = 1
+    static let searchUIKitGroupSizeHeight: CGFloat = 0.2
+    static let searchUIKitGroupCount = 2
+    static let searchUIKitHeaderSizeWidth: CGFloat = 0.98
+    static let searchUIKitHeaderSizeHeight: CGFloat = 50
 }
 
 

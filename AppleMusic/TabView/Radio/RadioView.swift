@@ -17,9 +17,9 @@ struct RadioView: View {
             ZStack(alignment: .bottom) {
                 NavigationView {
                     ScrollView(showsIndicators: false) {
-                        RadioHStack()
+                        RadioFirstSection()
                             .frame(width: geometry.size.width * Constants.radioViewHStackWidth)
-                        RadioVStack()
+                        RadioSecondSection()
                             .frame(width: geometry.size.width * Constants.radioViewVStackWidth)
                     }
                     .padding(.horizontal)

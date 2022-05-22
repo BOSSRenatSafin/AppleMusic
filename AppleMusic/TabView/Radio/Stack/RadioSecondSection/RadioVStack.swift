@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RadioVStack: View {
+struct RadioSecondSection: View {
     
     var colum = [
         GridItem(.flexible())]
@@ -21,7 +21,7 @@ struct RadioVStack: View {
                     Text("Станции")
                         .font(.system(size: Constants.radioVStackTextFountSize, weight: .bold, design: .default))
                 }
-                ForEach(RadioDataVStack.radioDataVStack) {cell in
+                ForEach(RadioDataSecondSection.radioDataVStack) {cell in
                     HStack {
                         Image(cell.image)
                             .resizable()
@@ -46,6 +46,6 @@ struct RadioVStack: View {
 
 struct RadioVStack_Previews: PreviewProvider {
     static var previews: some View {
-        RadioVStack()
+        RadioSecondSection()
     }
 }

@@ -26,8 +26,7 @@ struct AppleMusicTabView: View {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")
                     }
-                
-                SearchView()
+                ContainerView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")

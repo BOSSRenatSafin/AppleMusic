@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RadioHStack: View {
+struct RadioFirstSection: View {
     
     var row = [
         GridItem(.fixed(Constants.radioHStackGridItem))]
@@ -18,7 +18,7 @@ struct RadioHStack: View {
             Spacer()
                 .frame(height: Constants.radioHStackSpacer)
             LazyHGrid(rows: row, spacing: Constants.radioHStackGridSpacing) {
-                ForEach(RadioDataHStack.radioDataHStack) {cell in
+                ForEach(RadioDataFirstSection.radioDataHStack) {cell in
                     VStack(alignment: .leading) {
                         Text(cell.firstTitle)
                             .foregroundColor(.secondary)
@@ -42,6 +42,6 @@ struct RadioHStack: View {
 
 struct RadioHStack_Previews: PreviewProvider {
     static var previews: some View {
-        RadioHStack()
+        RadioFirstSection()
     }
 }

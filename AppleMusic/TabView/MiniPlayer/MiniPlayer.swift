@@ -13,7 +13,7 @@ struct MiniPlayer: View {
     var height = UIScreen.main.bounds.height / 3
     var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
     //Volum Slider...
-    @State var volum: CGFloat = Constants.miniPlayerZero
+    @State var volume: CGFloat = Constants.miniPlayerZero
     //TrackSlider...
     @State var trackSlider: CGFloat = Constants.miniPlayerZero
     //Gesture OffSet...
@@ -21,12 +21,9 @@ struct MiniPlayer: View {
     
     var body: some View {
         VStack {
-            Capsule()
-                .fill(Color.gray)
-                .frame(width: expand ? Constants.miniPlayerCapsulFrame : Constants.miniPlayerCapsulFrameZero, height: expand ? Constants.miniPlayerCapsuleFrameHeight : Constants.miniPlayerCapsulFrameZero)
-                .opacity(expand ? Constants.miniPlayerCapsuleOpacity : Constants.miniPlayerCapsuleOpacityZero)
-                .padding(.top,expand ? safeArea?.top : Constants.miniPlayerZero)
-                .padding(.vertical, expand ? Constants.miniPlayerCapsulePadding : Constants.miniPlayerZero)
+            //Capsule...
+            MiniPlayerIconToCollapse(expand: $expand, safeArea: safeArea)
+            
             HStack(spacing: Constants.hStackSpacing) {
                 if expand {Spacer(minLength: Constants.miniPlayerSpacerMinLenght)}
                 Image("01")
@@ -85,57 +82,12 @@ struct MiniPlayer: View {
                 }
                 .padding()
                 //Track Slider...
-                HStack {
-                    Slider(value: $trackSlider)
-                }
-                .padding(.horizontal)
+                MiniPlayerTrackSlider(trackSlider: $trackSlider)
                 //Button...
-                HStack(spacing: Constants.miniPlayerButtonHStackSpacing) {
-                    Button(action: {}) {
-                        Image(systemName: "backward.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.primary)
-                    }
-                    Button(action: {}) {
-                        Image(systemName: "play.fill")
-                            .font(.system(size: Constants.miniPlayerButtonPlaySize))
-                            .foregroundColor(.primary)
-                    }
-                    Button(action: {}) {
-                        Image(systemName: "forward.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.primary)
-                    }
-                }
-                .padding()
+                MiniPlayerButton()
                 Spacer(minLength: Constants.miniPlayerSpacerMinLenght)
-                HStack(spacing: Constants.miniPlayerSliderSpacing) {
-                    Image(systemName: "speaker.fill")
-                    Slider(value: $volum)
-                    Image(systemName: "speaker.wave.2.fill")
-                }
-                .padding()
-                HStack(spacing: Constants.miniPlayerButtonBottomSpacing) {
-                    
-                    Button(action: {}) {
-                        Image(systemName: "arrow.up.message")
-                            .font(.title2)
-                            .foregroundColor(.primary)
-                    }
-                    
-                    Button(action: {}) {
-                        Image(systemName: "airplayaudio")
-                            .font(.title2)
-                            .foregroundColor(.primary)
-                    }
-                    
-                    Button(action: {}) {
-                        Image(systemName: "list.bullet")
-                            .font(.title2)
-                            .foregroundColor(.primary)
-                    }
-                }
-                .padding(.bottom, safeArea?.bottom == Constants.miniPlayerZero ? Constants.miniPlayerButtonBottomPadding : safeArea?.bottom)
+                MiniPlayerVolume(volume: $volume)
+                MiniPlayerBottomButton()
             }
             .frame(height: expand ? nil : Constants.miniPlayerZero)
             .opacity(expand ? Constants.miniPlayerOpacityExpended : Constants.miniPlayerZero)
