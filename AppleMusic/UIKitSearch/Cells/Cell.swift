@@ -17,7 +17,7 @@ class Cell: UICollectionViewCell {
         var imageView = UIImageView()
         imageView.contentMode = .scaleToFill
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 6
+        imageView.layer.cornerRadius = Constants.searchUIKitImageCornerRadius
         return imageView
     }()
     
@@ -41,8 +41,8 @@ class Cell: UICollectionViewCell {
     
     private func setupLayout() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 8.0).isActive = true
-        imageView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 0.9).isActive = true
+        imageView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: Constants.searchUIKitImageHeightAnchor).isActive = true
+        imageView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: Constants.searchUIKitImageWidthAnchor).isActive = true
     }
     
     public func configure(model: Album) {

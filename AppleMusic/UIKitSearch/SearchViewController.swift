@@ -41,9 +41,9 @@ class SearchViewController: UIViewController {
     
     private func setupLayout() {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 5).isActive = true
-        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10).isActive = true
+        collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: Constants.searchUIKitCollectionViewTopAnchor).isActive = true
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.searchUIKitCollectionViewLeadingAnchor).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: Constants.searchUIKitCollectionViewTraelingAnchor).isActive = true
         collectionView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
     }
     
@@ -52,13 +52,13 @@ class SearchViewController: UIViewController {
     }
     
     private func createLayout() -> UICollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.1), heightDimension: .fractionalHeight(0.1))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(Constants.searchUIKitItemSize), heightDimension: .fractionalHeight(Constants.searchUIKitItemSize))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.2))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(Constants.searchUIKitGroupSizeWidth), heightDimension: .fractionalHeight(Constants.searchUIKitGroupSizeHeight))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: Constants.searchUIKitGroupCount)
         let section = NSCollectionLayoutSection(group: group)
-        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.98),
-                                                heightDimension: .estimated(50)
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(Constants.searchUIKitHeaderSizeWidth),
+                                                heightDimension: .estimated(Constants.searchUIKitHeaderSizeHeight)
         )
         let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize,
                                                                  elementKind: UICollectionView.elementKindSectionHeader,

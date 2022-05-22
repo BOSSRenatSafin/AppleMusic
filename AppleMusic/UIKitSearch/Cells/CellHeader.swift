@@ -16,7 +16,7 @@ class CellsHeader: UICollectionReusableView {
     lazy var label: UILabel = {
         let label = UILabel()
         label.text = ""
-        label.font = .systemFont(ofSize: 25, weight: .bold)
+        label.font = .systemFont(ofSize: Constants.searchUIKitLabelSize, weight: .bold)
         return label
     }()
     

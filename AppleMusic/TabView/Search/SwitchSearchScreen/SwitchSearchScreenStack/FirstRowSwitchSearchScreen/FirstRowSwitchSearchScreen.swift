@@ -25,27 +25,7 @@ struct FirstRowSwitchSearchScreen: View {
                 Divider()
                 Spacer()
                     .frame(height: Constants.firstRowSwitchSearchScreenSpacer)
-                LazyHGrid(rows: row, spacing: Constants.firstRowSwitchSearchScreenGridSpacing) {
-                    ForEach(DataFirstRowSwitchSearchScreen.dataFirstRowSwitchSearchScreen) {cell in
-                        VStack(alignment: .leading) {
-                            Text(cell.firstTitle)
-                                .foregroundColor(.secondary)
-                            Text(cell.secondTitle)
-                            Text(cell.thirdTitle)
-                                .foregroundColor(.secondary)
-                            Image(cell.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .cornerRadius(Constants.firstRowSwitchSearchScreenImageCornerRadius)
-                        }
-                        
-                    }
-                    .padding(.leading)
-                }
-                .frame(height: Constants.firstRowSwitchSearchScreenGridFrame)
-                Spacer()
-                    .frame(height: Constants.firstRowSwitchSearchScreenSpacerTop)
-                Divider()
+                FirstRowSwitchSearchScreenText()
             }
         }
     }

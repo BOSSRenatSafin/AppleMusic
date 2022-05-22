@@ -18,14 +18,7 @@ struct MainSearchScreen: View {
         GeometryReader { geometry in
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
-                    HStack {
-                        Spacer()
-                            .frame(width: Constants.mainSearchScreenGridItemSpacingSpacerWidth)
-                        Text("Поиск по категориям")
-                            .font(.system(size: Constants.mainSearchScreenGridItemSpacingTextSize, weight: .bold, design: .default))
-                    }
-                    Spacer()
-                        .frame(height: Constants.mainSearchScreenGridItemSpacingSpacerHeight)
+                    MainSearchScreenHeader()
                     HStack {
                         Spacer()
                         LazyVGrid(columns: colums, alignment: .center, spacing: Constants.mainSearchScreenGridItemSpacingLazyVGridSpacing) {

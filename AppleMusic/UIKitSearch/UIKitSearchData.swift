@@ -26,7 +26,15 @@ class UIKitSearchData {
                                      Album(imegeName: "MainSearchScreen5"),
                                      Album(imegeName: "MainSearchScreen6"),
                                      Album(imegeName: "MainSearchScreen7"),
-                                     Album(imegeName: "MainSearchScreen8")
+                                     Album(imegeName: "MainSearchScreen8"),
+                                     Album(imegeName: "MainSearchScreen9"),
+                                     Album(imegeName: "MainSearchScreen10"),
+                                     Album(imegeName: "MainSearchScreen11"),
+                                     Album(imegeName: "MainSearchScreen12"),
+                                     Album(imegeName: "MainSearchScreen13"),
+                                     Album(imegeName: "MainSearchScreen14"),
+                                     Album(imegeName: "MainSearchScreen15"),
+                                     Album(imegeName: "MainSearchScreen16")
                                     ])
         ]
     }
